@@ -1,0 +1,140 @@
+nav{
+  background: #000;
+  padding: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .link{
+  color:#a0a0a0;
+  text-decoration: none;
+  display: block;
+  padding: .9em .4em;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.menu li.subitem .link{
+  padding: .9em;
+}
+.menu .logo .link{
+  font-size: 1.4rem;
+  padding: .6em .8em .6em 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.menu .item{
+  padding: .8em;
+  order: 3;
+  width: 100%;
+  font-weight: 300;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+
+/* Javascript */
+.active .item{
+  display: block;
+}
+.menu .item.button{
+  padding: .8em .5em;
+  order: 2;
+  border-bottom: 1px #a0a0a0 solid;
+}
+.menu .toggle{
+  order: 1;
+  font-size: 1.2rem;
+}
+.menu .item:not(.button) a:hover,
+.item a:hover::after{
+  color:#fff;
+}
+
+/* Submenu */
+.submenu{
+  display: none;
+}
+.submenu-active{
+  background-color: #111;
+  border-radius: 3px;
+}
+.submenu-active .submenu{
+  display: block;
+}
+.has-submenu > a::after{
+  font-family: "Font Awesome 5 Free";
+  font-size: .7rem;
+  line-height: 1em;
+  font-weight: 900;
+  content: "\f078";
+  color:#a0a0a0;
+  padding-left: .4em;
+}
+
+/* Tablet Menu */
+@media all and (min-width: 700px){
+  .menu{
+    justify-content: center;
+  }
+  .menu .logo{
+    flex: 1;
+  }
+  .menu .item.button{
+    width: auto;
+    order: 1;
+    display: block;
+    border-bottom: none;
+    border-radius: 30px;
+  }
+  .menu .item.button .link{
+    color:#fff;
+    letter-spacing: 4px;
+  }
+  .menu .item.button .link .bg{
+    background: #4D95C2;
+    padding: .8em 1.4em;
+    border-radius: 30px;
+  }
+  .menu .toggle{
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+}
+
+/* Desktop Menu */
+@media all and (min-width:960px){
+  .menu{
+    justify-content: center;
+  }
+  .menu .logo{
+    flex: 1;
+  }
+  .menu .item{
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .menu .item.button{
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+  .menu .submenu-active .submenu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .menu .toggle{
+    display: none;
+  }
+}
