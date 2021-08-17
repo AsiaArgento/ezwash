@@ -9,44 +9,150 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/modal.css">
   </head>
   <body>
     <nav>
       <ul class="menu">
         <li class="logo"><a class="link" href="/">E-Z Wash</a></li>
         <li class="item"><a class="link" href="#">About</a></li>
-        <li class="item has-submenu">
+        <!-- <li class="item has-submenu">
           <a class="link" tabindex="0">Services</a>
           <ul class="submenu">
             <li class="subitem"><a class="link" href="#">Car Wash</a></li>
             <li class="subitem"><a class="link" href="#">Car Wash & Wax</a></li>
           </ul>
-        </li>
+        </li> -->
         <li class="item button"><a class="link" href="#"><span class="bg">Contact Us</span></a></li>
         <li class="toggle"><a class="link" href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
 
     <section class="services">
-      <div class="service-item one">
-        <h3 class="title">Basic</h3>
-        <h4 class="subtitle">Basic Exterior Package</h4>
+      <a class="link myBtn">
+        <div class="service-item one">
+          <h3 class="title">Basic</h3>
+          <h4 class="subtitle">Basic Exterior Package</h4>
+        </div>
+      </a>
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal-content bg1">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h3 class="modal-title">Basic Exterior Package - $25</h3>
+            <span class="modal-subtitle">Time Estimate - About 1hr</span>
+          </div>
+          <ul class="modal-list">
+            <li>Hand Wash (Wax Safe)</li>
+            <li>Towel Dry</li>
+            <li>Wheel Detailing</li>
+            <li>Tire Shine</li>
+          </ul>
+          <a class="button">Set An Appt</a>
+        </div>
       </div>
-      <div class="service-item two">
-        <h3 class="title">Advanced</h3>
-        <h4 class="subtitle">Complete Exterior Package</h4>
+
+      <a class="link myBtn">
+        <div class="service-item two">
+          <h3 class="title">Intermediate</h3>
+          <h4 class="subtitle">Basic Exterior + Interior Package</h4>
+        </div>
+      </a>
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal-content bg3">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h3 class="modal-title">Basic Exterior + Interior Package - $50</h3>
+            <span class="modal-subtitle">Time Estimate - About 2hrs</span>
+          </div>
+          <ul class="modal-list">
+            <li>Basic Exterior Package +</li>
+            <li>Vacuum</li>
+            <li>Dusting</li>
+            <li>Cleaning</li>
+            <li>Febreze</li>
+          </ul>
+          <a class="button">Set An Appt</a>
+        </div>
       </div>
-      <div class="service-item three">
-        <h3 class="title">Intermediate</h3>
-        <h4 class="subtitle">Complete Interior Package</h4>
+
+      <a class="link myBtn">
+        <div class="service-item three">
+          <h3 class="title">Advanced</h3>
+          <h4 class="subtitle">Complete Exterior Package</h4>
+        </div>
+      </a>
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal-content bg2">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h3 class="modal-title">Complete Exterior Package - $60</h3>
+            <span class="modal-subtitle">Time Estimate - About 2hrs</span>
+          </div>
+          <ul class="modal-list">
+            <li>Basic Exterior Package +</li>
+            <li>Hand Wax</li>
+            <li>Hand Buffing</li>
+            <li>Rain-X</li>
+          </ul>
+          <a class="button">Set An Appt</a>
+        </div>
       </div>
-      <div class="service-item four">
-        <h3 class="title">Ultimate</h3>
-        <h4 class="subtitle">Complete Exterior/Interior Package</h4>
+
+    </section>
+
+    <!-- Services Full -->
+    <section class="services-full">
+      <a class="link myBtn">
+        <div class="service-item four">
+          <h3 class="title">Ultimate</h3>
+          <h4 class="subtitle">Complete Exterior + Interior Package</h4>
+        </div>
+      </a>
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal-content bg4">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h3 class="modal-title">Complete Exterior + Interior Package - $80</h3>
+            <span class="modal-subtitle">Time Estimate - About 3hrs</span>
+          </div>
+          <ul class="modal-list">
+            <li>Complete Exterior Package +</li>
+            <li>Complete Interior Package +</li>
+            <li>Best Deal!!</li>
+          </ul>
+          <a class="button">Set An Appt</a>
+        </div>
       </div>
     </section>
 
+    <!-- About -->
+    <section class="about">
+      <div class="bg-about">
+        <div class="left">
+
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="">
+
+      </div>
+      <div class="">
+
+      </div>
+    </footer>
+
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/b025295272.js" crossorigin="anonymous"></script>
   </body>
