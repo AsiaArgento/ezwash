@@ -15,7 +15,7 @@
     <nav>
       <ul class="menu">
         <li class="logo"><a class="link" href="/">E-Z Wash</a></li>
-        <li class="item"><a class="link" href="#">About</a></li>
+        <li class="item"><a class="link" href="#about">About</a></li>
         <!-- <li class="item has-submenu">
           <a class="link" tabindex="0">Services</a>
           <ul class="submenu">
@@ -23,7 +23,33 @@
             <li class="subitem"><a class="link" href="#">Car Wash & Wax</a></li>
           </ul>
         </li> -->
-        <li class="item button"><a class="link" href="#"><span class="bg">Contact Us</span></a></li>
+        <li class="item button"><a class="link myBtn" href="#"><span class="bg">Contact Us</span></a></li>
+        <!-- Modal -->
+        <div class="modal">
+          <div class="modal-content bg5">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+              <h3 class="modal-title">Contact Us</h3>
+              <span class="modal-subtitle">Please leave a brief message.
+              Thank you!</span>
+            </div>
+            <form name="ezwash" method="POST" data-netlify="true">
+              <p style="margin-bottom:.4em;">Your Name:</p><label><input style="margin-bottom:.6em;" type="text" name="name" /></label>
+              <p style="margin-bottom:.4em;">Your Email:</p><label><input style="margin-bottom:.6em;" type="email" name="email" /></label>
+              <p style="margin-bottom:.4em;">Service:</p>
+                <label><select style="margin-bottom:.6em;" name="service[]" multiple>
+                  <option value="basic">Basic</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                  <option value="ultimate">Ultimate</option>
+                </select></label>
+              <p style="margin-bottom:.4em;">Message:</p><label><textarea style="margin-bottom:.6em;" name="message"></textarea></label>
+              <p style="margin-bottom:.4em;">
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+        </div>
         <li class="toggle"><a class="link" href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
@@ -131,18 +157,16 @@
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="bg-about">
         <div class="about-left">
           <h2 class="about-title">E-Z | Est. 2006</h2>
           <p class="about-text">Now serving the Denver, CO area. It all started with a love for detailing cars in the shortest amount of time possible. Now you don't even have to leave the comfort of your home!</p><br>
-          <p class="about-text">We offer detailer level services at competitive prices! Our head detailer
-          Matt is an expert and your sure to be pleased. Setup an appointment today.</p>
+          <p class="about-text">We offer detailer level services at competitive prices! Our detailers are experts and your sure to be pleased. Setup an appointment today!</p>
           <h3 class="about-subtitle">How It Works</h3>
           <p class="about-text">We are committed to making it as easy as possible for you to get a
           detail-level service on your vehicle without the hassle! We have a list of services to select
-          from, find what best suits you, setup an appointment thru Calendly. That's it! We show up to
-          your house, ready to go.</p>
+          from, find what best suits you, you choose when you would like us to show up. That's it! We show up to your house, ready to go. 🧼</p>
         </div>
         <div class="">
 
