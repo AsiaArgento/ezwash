@@ -90,13 +90,32 @@
 .about{
   padding: 0 1em 1em 1em;
   background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.about-left{
+  padding: 4em 1em 1em 1em;
+}
+.about-title{
+  font-size: 2.063rem;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 9px #000;
+  margin-bottom: .3em;
+  text-transform: uppercase;
+}
+.about-text{
+  font-size: 1.1rem;
+  color: #a3a3a3;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: .4px;
 }
 .bg-about{
   background-image: linear-gradient(32deg,rgba(0,0,0,.93),transparent),url(../img/car-show.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   height: 500px;
 }
 
