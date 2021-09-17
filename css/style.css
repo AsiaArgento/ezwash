@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .services{
   display: block;
@@ -14,8 +15,14 @@
   padding: 1em;
   margin-bottom: 1em;
   color:#fff;
-  height: 250px;
+  height: 350px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.service-item:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, .4);
+  transform: scale(1.05);
 }
 .service-item .title{
   font-size: 2.063rem;
@@ -23,7 +30,7 @@
   text-shadow: 1px 1px 9px #000;
   margin-bottom: .3em;
   text-transform: uppercase;
-  margin-top: 2.5em;
+  margin-top: 4em;
 }
 .service-item .subtitle{
   font-size: 0.875rem;
@@ -44,12 +51,6 @@
 }
 .services-full .link{
   text-decoration: none;
-}
-.services-full .service-item.four{
-  background-image: linear-gradient(141deg,transparent,rgba(0,0,0,.99)), url(../img/car-four-large.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .service-item.one{
